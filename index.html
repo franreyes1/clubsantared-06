@@ -37,10 +37,11 @@ src="https://www.facebook.com/tr?id=9748513638584698&ev=PageView&noscript=1"
 
     <div class="card" data-k="c">
       <div class="main-text" data-k="t">
-        <p class="typing">🔥ESCRIBI TU NOMBRE Y CREA TU USUARIO🔥</p>
-        <p><span class="dorado-neon">BONO DE BIENVENIDA DEL 20% </span></p>
+        <p class="typing">🔥CREÁ TU USUARIO🔥</p>
+        <p><span class="dorado-neon">BONO DE BIENVENIDA DEL 20%</span></p>
       </div>
-      <input type="text" id="nombreUsuario" placeholder="Tu nombre" class="nombre-input" autocomplete="name" inputmode="text">
+
+      <!-- Eliminado el input de nombre -->
       <button class="popup-button" id="whatsappButton">
         <span>¡CREA TU USUARIO!</span>
         <img src="img/WhatsApp.svg-2.webp" alt="Whatsapp" decoding="async">
@@ -83,7 +84,7 @@ src="https://www.facebook.com/tr?id=9748513638584698&ev=PageView&noscript=1"
 
     var U=(function(){
       var q=["lastWindow","visitCount","getItem","setItem","toString","length","floor","now","Date","parseInt","localStorage",
-             "nombreUsuario","value","trim","whatsappButton","addEventListener","click","open","_blank","https://wa.me/","?text=",
+             "whatsappButton","addEventListener","click","open","_blank","https://wa.me/","?text=",
              "function","fbq","track","Schedule"]; 
       return function(i){ return q[i]; };
     })();
@@ -99,22 +100,10 @@ src="https://www.facebook.com/tr?id=9748513638584698&ev=PageView&noscript=1"
     var CFG=(function(){
       var tick=Number(getComputedStyle(document.documentElement).getPropertyValue('--tick'))||300000;
       var base=["5493515221091","5492236781774","5493516748361","5492236780433"];
-      var enc=btoa(JSON.stringify(base)).split("").reverse().join("");
-      var back=enc.split("").map(function(c){return c.charCodeAt(0);}).map(function(n){return String.fromCharCode(n);}).reverse().join("");
-      var arr=(function(s){try{return JSON.parse(atob(s));}catch(_){return base.slice();}})(back);
-      return { tick:tick, list:arr };
+      return { tick:tick, list:base };
     })();
 
-    function wrap(v){ return {v:v, get value(){ return this.v; }}}
     function cycle(len,seed){ return ((seed%len)+len)%len; }
-    function pipe(a,b){ return function(x){ return b(a(x)); }; }
-
-    var getName=function(){
-      var el=T.d.getElementById(U(11));
-      if(!el) return "";
-      var raw=el[U(12)];
-      return (raw && typeof raw[U(13)]==="function") ? raw[U(13)]() : "";
-    };
 
     var nowMs=T.now();
     var W0=Math[U(6)](nowMs/CFG.tick)*CFG.tick;
@@ -122,57 +111,28 @@ src="https://www.facebook.com/tr?id=9748513638584698&ev=PageView&noscript=1"
     var count=T.num(T.get(U(1)));
     if(lastW!==W0){ T.set(U(0),W0); T.set(U(1),0); count=0; }
 
-    var L=Array.isArray(CFG.list)&&CFG.list.length?CFG.list.slice():["5491125709348"];
+    var L=CFG.list.slice();
     var baseIdx=Math[U(6)](nowMs/CFG.tick)%L[U(5)];
     var idx=cycle(L[U(5)], baseIdx+count);
     var target=String(L[idx]);
     T.set(U(1),(count+1)[U(4)]());
 
-    var mkUrl=(function(){
-      var join=function(a,b){ return a+b; };
-      var withText=function(u,t){ return u + U(20) + encodeURIComponent(t); };
-      return function(num,text){
-        var base=join(U(19), num);
-        return withText(base, text);
-      };
-    })();
+    var mkUrl=function(num){
+      var msg="Hola, quiero crear mi usuario.";
+      return U(16) + num + U(17) + encodeURIComponent(msg);
+    };
 
-    var msgBuilder=(function(){
-      var a=function(s){ return "Hola, quiero crear ,mi usuario. Mi nombre es " + s + "."; };
-      var b=function(){ return "Hola, crear mi usuario "; };
-      return function(n){ return n ? a(n) : b(); };
-    })();
-
-    var binder=(function(){
-      var id=U(14), node=T.d.getElementById(id);
-      var noop=function(){};
-      var flags={ passive:true, capture:false };
-      return function(handler){
-        if(!node || !node[U(15)]) return;
-        node[U(15)](U(16), noop, flags);
-        node[U(15)](U(16), function(e){
-          try{ var k=[true,false,null,void 0].filter(Boolean).length; if((k^3)!==2){} }catch(_){}
-          return handler(e);
-        }, { passive:true, capture:false, once:false });
-      };
-    })();
-
-    var onClick=(function(){
-      var stage1=function(){ return wrap(getName()); };
-      var stage2=function(w){ return wrap(String(w.value||"")); };
-      var stage3=function(w){ return wrap(msgBuilder(w.value)); };
-      var stage4=function(w){
-        var url=mkUrl(target, w.value);
-        T.w[U(17)](url, U(18));
-        var fbq=(typeof T.w[U(22)]===U(21)) ? T.w[U(22)] : null;
-        if(fbq){ try{ fbq(U(23), U(24)); }catch(_){ } } 
-        return true;
-      };
-      return function(){ return pipe(stage1, pipe(stage2, pipe(stage3, stage4)))(); };
-    })();
-
-    binder(onClick);
+    var node=T.d.getElementById(U(11));
+    if(node && node[U(12)]){
+      node[U(12)](U(13), function(){
+        var url=mkUrl(target);
+        T.w[U(14)](url, U(15));
+        var fbq=(typeof T.w[U(19)]===U(18)) ? T.w[U(19)] : null;
+        if(fbq){ try{ fbq(U(20), U(21)); }catch(_){ } } 
+      }, { passive:true });
+    }
   })();
 </script>
   </body>
 </html>
+
