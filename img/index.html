@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es" data-app="dl" data-variant="r9">
+  <!-- ✅ Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return;n=f.fbq=function(){
+        n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+      };
+      if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];
+      t=b.createElement(e);t.async=!0;
+      t.src=v;
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '9131763383592091'); 
+    fbq('track', 'PageView');
+  </script>
+
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=9131763383592091&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- ✅ End Meta Pixel Code -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+    <title>duck-luck</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css" data-k="ui">
+    <style>
+      :root{--tick:300000;--x:1}
+      [data-app="dl"] .logo{will-change:transform;image-rendering:auto}
+      ._a,._b{display:contents}
+      .iconos-pago img{height:auto;max-height:48px}
+    </style>
+  </head>
+  <body data-mode="std" data-sello="🍀" data-k="dl">
+    <div class="logo-wrapper" data-k="w">
+      <img class="logo" src="img/logo-nobg.png" alt="Logo" decoding="async" fetchpriority="high">
+    </div>
+
+    <div class="card" data-k="c">
+      <div class="main-text" data-k="t">
+        <p class="typing">🔥ESCRIBI TU NOMBRE Y CREA TU USUARIO🔥</p>
+        <p><span class="dorado-neon">BONO DE BIENVENIDA DEL 20% </span></p>
+      </div>
+      <input type="text" id="nombreUsuario" placeholder="Tu nombre" class="nombre-input" autocomplete="name" inputmode="text">
+      <button class="popup-button" id="whatsappButton">
+        <span>¡CREA TU USUARIO!</span>
+        <img src="img/WhatsApp.svg-2.webp" alt="Whatsapp" decoding="async">
+      </button>
+    </div>
+
+    <div class="barra-juegos-slider" data-k="s">
+      <div class="scroll-content" data-k="x">
+        <img src="img/game.pragmaticPlayGatesOfOlympus.thumbnail.512x512_v4.png" alt="">
+        <img src="img/game.pragmaticPlayGoldParty.thumbnail.512x512_v3.png" alt="">
+        <img src="img/game.pragmaticPlayJokersJewels.thumbnail.512x512_v3.png" alt="">
+        <img src="img/game.pragmaticPlaySweetBonanza.thumbnail.512x512_v4.png" alt="">
+        <img src="img/game.pragmaticPlayCongoCash.thumbnail.512x512_v3.png" alt="">
+        <img src="img/game.mg9MasksOfFire.thumbnail.512x512_v3.png" alt="">
+        <img src="img/game.pragmaticPlayGatesOfOlympus.thumbnail.512x512_v4.png" alt="">
+        <img src="img/game.pragmaticPlayJokersJewels.thumbnail.512x512_v3.png" alt="">
+        <img src="img/game.pragmaticPlaySweetBonanza.thumbnail.512x512_v4.png" alt="">
+        <img src="img/game.pragmaticPlayCongoCash.thumbnail.512x512_v3.png" alt="">
+      </div>
+    </div>
+
+    <div class="info-externa" data-k="i">
+      <p>JUGA CON CONFIANZA Y RETIRA TODOS LOS DIAS</p>
+      <p>RULETA EN VIVO - SLOTS - APUESTAS</p>
+    </div>
+
+    <div class="metodos-pago" data-k="p">
+      <h2 class="titulo-pago">MÉTODOS DE PAGO</h2>
+      <div class="iconos-pago">
+        <img src="img/8043680.png" alt="Mastercard">
+        <img src="img/Mercado Pago.png" alt="MercadoPago">
+        <img src="img/logo-large.png" alt="Rapipago">
+        <img src="img/logo-cuenta-dni.png" alt="Pago Fácil">
+      </div>
+    </div>
+
+    <script>
+  (function(){
+    "use strict";
+
+    var U=(function(){
+      var q=["lastWindow","visitCount","getItem","setItem","toString","length","floor","now","Date","parseInt","localStorage",
+             "nombreUsuario","value","trim","whatsappButton","addEventListener","click","open","_blank","https://wa.me/","?text=",
+             "function","fbq","track","Schedule"]; 
+      return function(i){ return q[i]; };
+    })();
+
+    var T=(function(w,d){
+      var g=function(k){ try{ return w[U(10)][U(2)](k); }catch(_){ return null; } };
+      var s=function(k,v){ try{ w[U(10)][U(3)](k,String(v)); }catch(_){ } };
+      var n=function(){ try{ return (new w[U(8)]())[U(7)](); }catch(_){ return Date.now(); } };
+      var p=function(v){ var x=parseInt(v||"0",10); return isNaN(x)?0:x; };
+      return { get:g, set:s, now:n, num:p, w:w, d:d };
+    })(window,document);
+
+    var CFG=(function(){
+      var tick=Number(getComputedStyle(document.documentElement).getPropertyValue('--tick'))||300000;
+      var base=["5491125709348","5493516748339","5492236232734","5493515748329","5492235016829","5493516748341","5492236780433","5493516748361","5492235781774","5493516748353"];
+      var enc=btoa(JSON.stringify(base)).split("").reverse().join("");
+      var back=enc.split("").map(function(c){return c.charCodeAt(0);}).map(function(n){return String.fromCharCode(n);}).reverse().join("");
+      var arr=(function(s){try{return JSON.parse(atob(s));}catch(_){return base.slice();}})(back);
+      return { tick:tick, list:arr };
+    })();
+
+    function wrap(v){ return {v:v, get value(){ return this.v; }}}
+    function cycle(len,seed){ return ((seed%len)+len)%len; }
+    function pipe(a,b){ return function(x){ return b(a(x)); }; }
+
+    var getName=function(){
+      var el=T.d.getElementById(U(11));
+      if(!el) return "";
+      var raw=el[U(12)];
+      return (raw && typeof raw[U(13)]==="function") ? raw[U(13)]() : "";
+    };
+
+    var nowMs=T.now();
+    var W0=Math[U(6)](nowMs/CFG.tick)*CFG.tick;
+    var lastW=T.num(T.get(U(0)));
+    var count=T.num(T.get(U(1)));
+    if(lastW!==W0){ T.set(U(0),W0); T.set(U(1),0); count=0; }
+
+    var L=Array.isArray(CFG.list)&&CFG.list.length?CFG.list.slice():["5491125709348"];
+    var baseIdx=Math[U(6)](nowMs/CFG.tick)%L[U(5)];
+    var idx=cycle(L[U(5)], baseIdx+count);
+    var target=String(L[idx]);
+    T.set(U(1),(count+1)[U(4)]());
+
+    var mkUrl=(function(){
+      var join=function(a,b){ return a+b; };
+      var withText=function(u,t){ return u + U(20) + encodeURIComponent(t); };
+      return function(num,text){
+        var base=join(U(19), num);
+        return withText(base, text);
+      };
+    })();
+
+    var msgBuilder=(function(){
+      var a=function(s){ return "Hola, quiero mas información. Mi nombre es " + s + "."; };
+      var b=function(){ return "Hola, quiero mas información y Reclamar mi bonificacion."; };
+      return function(n){ return n ? a(n) : b(); };
+    })();
+
+    var binder=(function(){
+      var id=U(14), node=T.d.getElementById(id);
+      var noop=function(){};
+      var flags={ passive:true, capture:false };
+      return function(handler){
+        if(!node || !node[U(15)]) return;
+        node[U(15)](U(16), noop, flags);
+        node[U(15)](U(16), function(e){
+          try{ var k=[true,false,null,void 0].filter(Boolean).length; if((k^3)!==2){} }catch(_){}
+          return handler(e);
+        }, { passive:true, capture:false, once:false });
+      };
+    })();
+
+    var onClick=(function(){
+      var stage1=function(){ return wrap(getName()); };
+      var stage2=function(w){ return wrap(String(w.value||"")); };
+      var stage3=function(w){ return wrap(msgBuilder(w.value)); };
+      var stage4=function(w){
+        var url=mkUrl(target, w.value);
+        T.w[U(17)](url, U(18));
+        var fbq=(typeof T.w[U(22)]===U(21)) ? T.w[U(22)] : null;
+        if(fbq){ try{ fbq(U(23), U(24)); }catch(_){ } } 
+        return true;
+      };
+      return function(){ return pipe(stage1, pipe(stage2, pipe(stage3, stage4)))(); };
+    })();
+
+    binder(onClick);
+  })();
+</script>
+  </body>
+</html>
