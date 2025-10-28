@@ -1,138 +1,118 @@
-<!DOCTYPE html>
-<html lang="es" data-app="dl" data-variant="r9">
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '9748513638584698');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=9748513638584698&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
-    <title>duck-luck</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilo.css" data-k="ui">
-    <style>
-      :root{--tick:300000;--x:1}
-      [data-app="dl"] .logo{will-change:transform;image-rendering:auto}
-      ._a,._b{display:contents}
-      .iconos-pago img{height:auto;max-height:48px}
-    </style>
-  </head>
-  <body data-mode="std" data-sello="🍀" data-k="dl">
-    <div class="logo-wrapper" data-k="w">
-      <img class="logo" src="img/logo-nobg.png" alt="Logo" decoding="async" fetchpriority="high">
-    </div>
+!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <title>Club Santa Verificado</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilo.css" />
 
-    <div class="card" data-k="c">
-      <div class="main-text" data-k="t">
-        <p class="typing">🔥CREÁ TU USUARIO🔥</p>
-        <p><span class="dorado-neon">BONO DE BIENVENIDA DEL 20%</span></p>
-      </div>
+  <!-- ✅ Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '3755148848120462');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=3755148848120462&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- ✅ End Meta Pixel Code -->
 
-      <!-- Eliminado el input de nombre -->
-      <button class="popup-button" id="whatsappButton">
-        <span>¡CREA TU USUARIO!</span>
-        <img src="img/WhatsApp.svg-2.webp" alt="Whatsapp" decoding="async">
-      </button>
-    </div>
-
-    <div class="barra-juegos-slider" data-k="s">
-      <div class="scroll-content" data-k="x">
-        <img src="img/game.pragmaticPlayGatesOfOlympus.thumbnail.512x512_v4.png" alt="">
-        <img src="img/game.pragmaticPlayGoldParty.thumbnail.512x512_v3.png" alt="">
-        <img src="img/game.pragmaticPlayJokersJewels.thumbnail.512x512_v3.png" alt="">
-        <img src="img/game.pragmaticPlaySweetBonanza.thumbnail.512x512_v4.png" alt="">
-        <img src="img/game.pragmaticPlayCongoCash.thumbnail.512x512_v3.png" alt="">
-        <img src="img/game.mg9MasksOfFire.thumbnail.512x512_v3.png" alt="">
-        <img src="img/game.pragmaticPlayGatesOfOlympus.thumbnail.512x512_v4.png" alt="">
-        <img src="img/game.pragmaticPlayJokersJewels.thumbnail.512x512_v3.png" alt="">
-        <img src="img/game.pragmaticPlaySweetBonanza.thumbnail.512x512_v4.png" alt="">
-        <img src="img/game.pragmaticPlayCongoCash.thumbnail.512x512_v3.png" alt="">
-      </div>
-    </div>
-
-    <div class="info-externa" data-k="i">
-      <p>JUGA CON CONFIANZA Y RETIRA TODOS LOS DIAS</p>
-      <p>RULETA EN VIVO - SLOTS - APUESTAS</p>
-    </div>
-
-    <div class="metodos-pago" data-k="p">
-      <h2 class="titulo-pago">MÉTODOS DE PAGO</h2>
-      <div class="iconos-pago">
-        <img src="img/8043680.png" alt="Mastercard">
-        <img src="img/Mercado Pago.png" alt="MercadoPago">
-        <img src="img/logo-large.png" alt="Rapipago">
-        <img src="img/logo-cuenta-dni.png" alt="Pago Fácil">
-      </div>
-    </div>
-
-    <script>
-  (function(){
-    "use strict";
-
-    var U=(function(){
-      var q=["lastWindow","visitCount","getItem","setItem","toString","length","floor","now","Date","parseInt","localStorage",
-             "whatsappButton","addEventListener","click","open","_blank","https://wa.me/","?text=",
-             "function","fbq","track","Schedule"]; 
-      return function(i){ return q[i]; };
-    })();
-
-    var T=(function(w,d){
-      var g=function(k){ try{ return w[U(10)][U(2)](k); }catch(_){ return null; } };
-      var s=function(k,v){ try{ w[U(10)][U(3)](k,String(v)); }catch(_){ } };
-      var n=function(){ try{ return (new w[U(8)]())[U(7)](); }catch(_){ return Date.now(); } };
-      var p=function(v){ var x=parseInt(v||"0",10); return isNaN(x)?0:x; };
-      return { get:g, set:s, now:n, num:p, w:w, d:d };
-    })(window,document);
-
-    var CFG=(function(){
-      var tick=Number(getComputedStyle(document.documentElement).getPropertyValue('--tick'))||300000;
-      var base=["5493515221091","5492236781774","5493516748361","5492236780433"];
-      return { tick:tick, list:base };
-    })();
-
-    function cycle(len,seed){ return ((seed%len)+len)%len; }
-
-    var nowMs=T.now();
-    var W0=Math[U(6)](nowMs/CFG.tick)*CFG.tick;
-    var lastW=T.num(T.get(U(0)));
-    var count=T.num(T.get(U(1)));
-    if(lastW!==W0){ T.set(U(0),W0); T.set(U(1),0); count=0; }
-
-    var L=CFG.list.slice();
-    var baseIdx=Math[U(6)](nowMs/CFG.tick)%L[U(5)];
-    var idx=cycle(L[U(5)], baseIdx+count);
-    var target=String(L[idx]);
-    T.set(U(1),(count+1)[U(4)]());
-
-    var mkUrl=function(num){
-      var msg="Hola, quiero crear mi usuario.";
-      return U(16) + num + U(17) + encodeURIComponent(msg);
-    };
-
-    var node=T.d.getElementById(U(11));
-    if(node && node[U(12)]){
-      node[U(12)](U(13), function(){
-        var url=mkUrl(target);
-        T.w[U(14)](url, U(15));
-        var fbq=(typeof T.w[U(19)]===U(18)) ? T.w[U(19)] : null;
-        if(fbq){ try{ fbq(U(20), U(21)); }catch(_){ } } 
-      }, { passive:true });
+  <style>
+    :root {
+      --tick: 300000;
+      --x: 1;
     }
-  })();
-</script>
-  </body>
-</html>
+    [data-app="dl"] .logo {
+      will-change: transform;
+      image-rendering: auto;
+    }
+    ._a, ._b {
+      display: contents;
+    }
+    .iconos-pago img {
+      height: auto;
+      max-height: 48px;
+    }
+  </style>
+</head>
 
+<body data-app="dl">
+  <div class="logo-wrapper">
+    <img class="logo" src="img/logo-nobg.png" alt="Logo" decoding="async" fetchpriority="high" />
+  </div>
+
+  <div class="card">
+    <div class="main-text">
+      <p class="typing">🔥CREÁ TU USUARIO AHORA🔥</p>
+      <p><span class="dorado-neon">BONO DE BIENVENIDA DEL 20%</span></p>
+    </div>
+
+    <a
+      id="whatsappButton"
+      class="popup-button"
+      href="#"
+      target="_blank"
+      rel="noopener"
+    >
+      <span>¡CREA TU USUARIO!</span>
+      <img src="img/WhatsApp.svg-2.webp" alt="Whatsapp" decoding="async" />
+    </a>
+  </div>
+
+  <div class="barra-juegos-slider">
+    <div class="scroll-content">
+      <img src="img/game.pragmaticPlayGatesOfOlympus.thumbnail.512x512_v4.png" alt="" />
+      <img src="img/game.pragmaticPlayGoldParty.thumbnail.512x512_v3.png" alt="" />
+      <img src="img/game.pragmaticPlayJokersJewels.thumbnail.512x512_v3.png" alt="" />
+      <img src="img/game.pragmaticPlaySweetBonanza.thumbnail.512x512_v4.png" alt="" />
+      <img src="img/game.pragmaticPlayCongoCash.thumbnail.512x512_v3.png" alt="" />
+      <img src="img/game.mg9MasksOfFire.thumbnail.512x512_v3.png" alt="" />
+    </div>
+  </div>
+
+  <div class="info-externa">
+    <p>JUGÁ CON CONFIANZA Y RETIRÁ TODOS LOS DÍAS</p>
+    <p>RULETA EN VIVO - SLOTS - APUESTAS</p>
+  </div>
+
+  <div class="metodos-pago">
+    <h2 class="titulo-pago">MÉTODOS DE PAGO</h2>
+    <div class="iconos-pago">
+      <img src="img/8043680.png" alt="Mastercard" />
+      <img src="img/Mercado Pago.png" alt="MercadoPago" />
+      <img src="img/logo-large.png" alt="Rapipago" />
+      <img src="img/logo-cuenta-dni.png" alt="Pago Fácil" />
+    </div>
+  </div>
+
+ <!-- ✅ Script del botón de WhatsApp con rotación aleatoria entre 2 números -->
+<script>
+  // Lista de números (solo dos)
+  const numeros = [
+    "5493516748355", // primer número
+    "5492236780438"  // segundo número
+  ];
+
+  document.getElementById("whatsappButton").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    // Elegir un número al azar
+    const numeroAleatorio = numeros[Math.floor(Math.random() * numeros.length)];
+
+    // Redirigir a WhatsApp
+    const mensaje = encodeURIComponent("Hola, quiero un usuario! CÓDIGO: SANT4SU3RT362");
+    const url = `https://wa.me/${numeroAleatorio}?text=${mensaje}`;
+
+    window.open(url, "_blank");
+  }
+
+</script>
